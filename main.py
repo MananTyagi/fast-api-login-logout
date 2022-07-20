@@ -48,11 +48,7 @@ def getPrivateendpoint(_=Depends(manager)):
 
 
 
-#for frontend
-@ app.get("/auth/login", response_class=HTMLResponse)
-def login(request: Request):
-   context = {'request': request, }
-   return templates.TemplateResponse("login.html.j2", context)
+
 
 
 
