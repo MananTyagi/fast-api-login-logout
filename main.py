@@ -44,7 +44,7 @@ def login(data: OAuth2PasswordRequestForm = Depends()):
 #check point for authentication of user
 @app.get("/private")
 def getPrivateendpoint(_=Depends(manager)):
-   return "You are an authentciated user"
+   return "You are an authentciated user and this is redirected page after logged in"
 
 
 
